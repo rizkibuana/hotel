@@ -16,8 +16,8 @@
     --dark-color: #2d2c2c;
     --purple-solid: #3075EF;
     /* 53, 10, 79 purple */
-    --purple-transparent: rgba(41, 150, 249, .7);    
-    --purple-transparent-alt: rgba(41, 150, 249, .5);
+    --purple-transparent: rgba(41, 150, 249, .9);    
+    --purple-transparent-alt: rgba(41, 150, 249, .1);
     --purple-light: #48A4FA;
     --yellow-solid: #FAD329;
     --gradient-color: linear-gradient(to right, var(--yellow-solid), var(--purple-light));
@@ -113,17 +113,17 @@ section {
 
 .btn-purple-ok {
     background-color: #FAD329;
-    color: rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, .9);
 }
 
-.btn-purple-ok:hover {
+/* .btn-purple-ok:hover {
     background-color: #FA4829;
     color: #fff;
-}
+} */
 
-.btn-purple:hover {
+/* .btn-purple:hover {
     background-color: #FA4829;
-}
+} */
 
 .dots {
     font-size: 2.4rem;
@@ -145,7 +145,7 @@ section {
 }
 
 .header.active {
-    background-color: var(--purple-transparent);
+    background-color: var(--purple-solid);
 }
 
 /* .header.active .nav-link {
@@ -378,7 +378,7 @@ section {
 
 /* special section style */
 .offer {
-    background-image: linear-gradient(to right bottom, #fad329, #ff9a61, #ff77b0, #d384ef, #2996f9);
+    background-image: linear-gradient(to right bottom, #fad329, #2996f9);
     background-size: cover;
 }
 
@@ -436,7 +436,7 @@ section {
 .room-name {
     font-size: 2.6rem;
     background-color: var(--yellow-solid);
-    color: rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, .9);
     padding: .5rem 2rem;
     position: absolute;
     left: 0;
@@ -448,7 +448,7 @@ section {
     display: block;
     font-size: 3.6rem;
     font-weight: bold;
-    color: #FA4829;
+    color: #000;
 }
 
 .per-night {
@@ -464,7 +464,7 @@ section {
 }
 
 .rooms-btn:hover {
-    color: #FA4829;
+    color: var(--yellow-solid);
 }
 
 /* contact section style */
@@ -517,7 +517,7 @@ section {
 /* footer section style */
 .footer {
     padding: 5rem 0;
-    background: linear-gradient(to right, rgba(250, 72, 41,.8), rgba(41, 150, 249,.8)), url(img/the_paradise_bg.jpg) bottom center no-repeat;
+    background: var(--purple-solid);
     color: #fff;
 }
 
